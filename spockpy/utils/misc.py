@@ -1,4 +1,4 @@
-from signal import signal
+import signal
 
 def confirm(prompt=None, default=False, timeout=0):
     """prompts for yes or no from the user. Returns True for yes and

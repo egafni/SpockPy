@@ -10,13 +10,13 @@ def all_files(path,num_root_dir_to_skip=1):
     all= map(lambda x: x.strip(),Popen(['find',path],stdout=PIPE).stdout.readlines())
     return map(lambda x: '/'.join(x.split('/')[num_root_dir_to_skip:]), filter(os.path.isfile,all))
 
-setup(name='Erik',
-    version='0.0.5',
-    description = "Erik Misc",
+setup(name='SpockPy',
+    version='0.0.2.4',
+    description = "Spocks misc scripts",
     author='Erik Gafni',
     license='Non-commercial',
-    long_description='Misc scripts',
+    long_description='Spocks misc scripts',
     packages=find_packages(),
-    install_requires=[
+    install_requires=['ConfigObj','decorator'
     ]
 )
