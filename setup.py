@@ -11,7 +11,7 @@ def all_files(path,num_root_dir_to_skip=1):
     return map(lambda x: '/'.join(x.split('/')[num_root_dir_to_skip:]), filter(os.path.isfile,all))
 
 setup(name='SpockPy',
-    version='0.0.2.4',
+    version='0.0.2.6',
     description = "Spocks misc scripts",
     author='Erik Gafni',
     license='Non-commercial',
